@@ -15,13 +15,13 @@ st.markdown(
     '<p style="font-size:25px; margin: 0; line-height:1.1;">Enter the Quantity of Grade 2 Workers:</p>',
     unsafe_allow_html=True
 )
-loader_qty = st.number_input("", min_value=0, step=1, format="%d", key="gradetwo_input")
+gradetwo_qty = st.number_input("", min_value=0, step=1, format="%d", key="gradetwo_input")
 
 st.markdown(
     '<p style="font-size:25px; margin: 0; line-height: 1.1;">Enter the Quantity of Grade 3 Workers:</p>',
     unsafe_allow_html=True
 )
-driver_qty = st.number_input("", min_value=0, step=1, format="%d", key="gradethree_input")
+gradethree_qty = st.number_input("", min_value=0, step=1, format="%d", key="gradethree_input")
 
 if st.button("Calculate Savings"):
     result_1 = fixed_number_1 * gradetwo_qty
@@ -47,4 +47,5 @@ if st.button("Calculate Savings"):
         unsafe_allow_html=True
 
     )
+
 
