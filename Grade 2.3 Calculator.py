@@ -24,8 +24,8 @@ st.markdown(
 driver_qty = st.number_input("", min_value=0, step=1, format="%d", key="gradethree_input")
 
 if st.button("Calculate Savings"):
-    result_1 = fixed_number_1 * gradetwo_qty
-    result_2 = fixed_number_2 * gradethree_qty
+    result_1 = fixed_number_1 * 'gradetwo_qty'
+    result_2 = fixed_number_2 * 'gradethree_qty'
     total_result = result_1 + result_2
 
     formatted_result_1 = f"£{result_1:,.2f}"
@@ -45,4 +45,5 @@ if st.button("Calculate Savings"):
         </p>
         """,
         unsafe_allow_html=True
+
     )
