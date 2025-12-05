@@ -8,8 +8,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-fixed_number_1 = 8231.19
-fixed_number_2 = 21792.66
+fixed_number_1 = 6284.47
+fixed_number_2 = 5958.10
 
 st.markdown(
     '<p style="font-size:25px; margin: 0; line-height:1.1;">Enter the Quantity of Grade 2 Workers:</p>',
@@ -47,5 +47,6 @@ if st.button("Calculate Savings"):
         unsafe_allow_html=True
 
     )
+
 
 
